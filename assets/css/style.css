@@ -46,6 +46,18 @@ nav ul li {
   background-color: pink;
   padding: 1rem;
   margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-image-container {
+}
+
+.logo-image {
+  border-radius: 100%;
+}
+
+.contact-me-info-container {
 }
 
 .portfolio-container {
