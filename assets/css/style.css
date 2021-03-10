@@ -20,11 +20,6 @@ html {
   height: 100vh;
 }
 
-/* header {
-  border: 10px solid red;
-  
-} */
-
 .navbar-container {
   display: flex;
   flex-basis: 15%;
@@ -34,6 +29,11 @@ html {
 .navbar-container nav {
   flex-grow: 1;
   padding: 2rem;
+}
+
+.navbar-items-container {
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul li {
@@ -117,6 +117,7 @@ nav ul li {
 
 .card:first-child {
   /* figure out how to size it differently */
+  width: 75vw;
   background-color: rgb(29, 102, 102);
 }
 
@@ -129,12 +130,19 @@ nav ul li {
   .body-container {
     flex-direction: column;
   }
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  .navbar-items-container {
+    flex-direction: row;
+    position: relative;
+  }
+  h1 {
+    margin-top: 10rem;
+  }
 }
-
-/* @media screen and (max-width: 768px) {
-  .body-container {
-    flex-direction: column;
-  } */
 
 /* how to make nav bar sticky rather than fixed
   .navbar-container {
@@ -152,10 +160,3 @@ nav ul li {
     flex-direction: row;
   } */
 /* } */
-
-/* Mobile viewport */
-/* @media screen and (max-width: 400px) {
-  .body-container {
-    flex-direction: column;
-  }
-} */
