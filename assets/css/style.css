@@ -33,6 +33,7 @@ nav ul li {
 .main-container {
   border: 10px solid green;
   flex-grow: 1;
+  max-width: 100%;
 }
 
 .about-container {
@@ -51,6 +52,27 @@ nav ul li {
   background-color: orange;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: lavender;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.card-image-container {
+  height: 20rem;
+}
+
+.card-image {
+  height: 100%;
+  max-width: 100%;
 }
 
 /* Tablet viewport */
@@ -81,3 +103,4 @@ nav ul li {
   .body-container {
     flex-direction: column;
   }
+}
