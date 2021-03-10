@@ -57,22 +57,45 @@ nav ul li {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .card {
-  background-color: lavender;
+  background-color: rgb(132, 132, 214);
   margin: 1rem;
   padding: 1rem;
   max-width: 100%;
+  border-radius: 5px;
+}
+.card-title {
+  background-color: lawngreen;
+  margin-bottom: 1rem;
 }
 
 .card-image-container {
   height: 20rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+  background-color: lightcyan;
 }
 
 .card-image {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-info {
+  background-color: lightcoral;
+}
+
+.card:first-child {
+  /* figure out how to size it differently */
+  background-color: rgb(29, 102, 102);
+}
+
+.card:not(:first-child) {
+  background-color: lightsalmon;
 }
 
 /* Tablet viewport */
@@ -99,8 +122,8 @@ nav ul li {
 }
 
 /* Mobile viewport */
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .body-container {
     flex-direction: column;
   }
-}
+} */
