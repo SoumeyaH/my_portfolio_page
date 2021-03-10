@@ -17,13 +17,23 @@ html {
 
 .body-container {
   display: flex;
-  flex-wrap: wrap;
   height: 100vh;
 }
 
-header {
+/* header {
   border: 10px solid red;
+  
+} */
+
+.navbar-container {
+  display: flex;
   flex-basis: 15%;
+  border: 10px solid red;
+}
+
+.navbar-container nav {
+  flex-grow: 1;
+  padding: 2rem;
 }
 
 nav ul li {
@@ -31,9 +41,12 @@ nav ul li {
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
   border: 10px solid green;
+
   flex-grow: 1;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .about-container {
@@ -50,15 +63,15 @@ nav ul li {
   flex-wrap: wrap;
 }
 
-.logo-image-container {
-}
+/* .logo-image-container {
+} */
 
 .logo-image {
   border-radius: 100%;
 }
 
-.contact-me-info-container {
-}
+/* .contact-me-info-container {
+} */
 
 .portfolio-container {
   background-color: orange;
@@ -70,6 +83,7 @@ nav ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: lawngreen;
 }
 
 .card {
@@ -92,8 +106,8 @@ nav ul li {
 }
 
 .card-image {
-  height: 100%;
-  width: 100%;
+  height: 20rem;
+  width: 20rem;
   object-fit: contain;
 }
 
@@ -115,8 +129,14 @@ nav ul li {
   .body-container {
     flex-direction: column;
   }
+}
 
-  /* how to make nav bar sticky rather than fixed
+/* @media screen and (max-width: 768px) {
+  .body-container {
+    flex-direction: column;
+  } */
+
+/* how to make nav bar sticky rather than fixed
   .navbar-container {
     position: relative;
   }
@@ -131,7 +151,7 @@ nav ul li {
   nav ul li {
     flex-direction: row;
   } */
-}
+/* } */
 
 /* Mobile viewport */
 /* @media screen and (max-width: 400px) {
