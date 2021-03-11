@@ -10,3 +10,14 @@
   box-sizing: border-box;
   list-style-type: none;
 }
+
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+  cursor: auto;
+}
