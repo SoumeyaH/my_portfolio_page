@@ -8,7 +8,7 @@ html {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.4)
     ),
-    url(../images/Background-image.jpg);
+    url(../images/background-image.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -17,26 +17,25 @@ html {
 
 .body-container {
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 .navbar-container {
   display: flex;
   flex-basis: 15%;
   border: 10px solid red;
-}
-
-.navbar-container nav {
-  flex-grow: 1;
   padding: 2rem;
+  flex-grow: 1;
 }
 
 .navbar-items-container {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
 }
 
-nav ul li {
+.navbar-container ul li {
   margin: 1rem;
 }
 
@@ -44,10 +43,12 @@ nav ul li {
   display: flex;
   flex-direction: column;
   border: 10px solid green;
-
   flex-grow: 1;
-  /* max-width: 100%; */
 }
+
+/* h1 {
+  font-size: 20rem;
+} */
 
 .about-container {
   background-color: yellow;
@@ -56,11 +57,14 @@ nav ul li {
 }
 
 .contact-container {
-  background-color: pink;
   padding: 1rem;
   margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
+}
+
+.contact-item-container {
+  margin: 1rem;
 }
 
 /* .logo-image-container {
@@ -90,42 +94,32 @@ nav ul li {
   background-color: rgb(132, 132, 214);
   margin: 1rem;
   padding: 1rem;
-  max-width: 100%;
+  height: 30rem;
+  width: 35vw;
   border-radius: 5px;
 }
 .card-title {
-  background-color: lawngreen;
+  font-size: 2rem;
   margin-bottom: 1rem;
-}
-
-.card-image-container {
-  height: 20rem;
-  width: 20rem;
-  margin-bottom: 1rem;
-  background-color: lightcyan;
-}
-
-.card-image {
-  height: 20rem;
-  width: 20rem;
-  object-fit: contain;
-}
-
-.card-info {
-  background-color: lightcoral;
 }
 
 .card:first-child {
-  /* figure out how to size it differently */
+  background-image: url(../images/horiseon.png);
+  height: 30rem;
   width: 75vw;
-  background-color: rgb(29, 102, 102);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card:not(:first-child) {
-  background-color: lightsalmon;
+  background-image: url(../images/portfolio-wip.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Tablet viewport */
+/* Tablet and below viewport */
 @media screen and (max-width: 768px) {
   .body-container {
     flex-direction: column;
@@ -139,24 +133,7 @@ nav ul li {
     flex-direction: row;
     position: relative;
   }
-  h1 {
+  .main-container {
     margin-top: 10rem;
   }
 }
-
-/* how to make nav bar sticky rather than fixed
-  .navbar-container {
-    position: relative;
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-  }
-  nav ul {
-    display: flex;
-  }
-  nav ul li {
-    flex-direction: row;
-  } */
-/* } */
