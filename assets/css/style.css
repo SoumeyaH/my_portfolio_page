@@ -42,9 +42,9 @@ p {
 
 .navbar-container {
   display: flex;
-  flex-basis: 15%;
+  flex-basis: 25%;
   border: 10px solid red;
-  padding: 2rem;
+  padding: 4rem;
   flex-grow: 1;
 }
 
@@ -54,11 +54,15 @@ p {
   flex-direction: column;
   position: fixed;
   top: 0;
+  left: 0;
+  border: 10px solid green;
 }
 
 .navbar-container ul li {
   margin: 1rem;
+  margin-top: 8rem;
   font-size: 2rem;
+  border: 10px solid yellow;
 }
 
 .main-container {
@@ -72,15 +76,35 @@ p {
   margin-bottom: 1rem;
 }
 
+.about-image {
+  border-radius: 60%;
+}
+
 .contact-container {
   padding: 1rem;
   margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .contact-item-container {
+  margin: 3rem;
+}
+
+.contact-me-info-container {
+  float: right;
   margin: 1rem;
+  max-width: 8rem;
+}
+.logo-image-container {
+  float: left;
 }
 
 .logo-image {
@@ -116,7 +140,6 @@ p {
 
 .card:first-child {
   background-image: url(../images/horiseon.png);
-  height: 30rem;
   width: 75vw;
 }
 
@@ -126,6 +149,10 @@ p {
 
 /* Tablet and below viewport */
 @media screen and (max-width: 768px) {
+  /* to do font size  */
+  h1 {
+    font-size: 4rem;
+  }
   .body-container {
     flex-direction: column;
   }
@@ -140,5 +167,8 @@ p {
   }
   .main-container {
     margin-top: 10rem;
+  }
+  .card {
+    width: 80%;
   }
 }
