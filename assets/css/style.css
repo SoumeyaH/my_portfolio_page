@@ -47,7 +47,6 @@ p {
       rgba(0, 0, 0, 0.8)
     ),
     url(../images/background-image.jpg);
-  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
