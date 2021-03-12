@@ -53,7 +53,6 @@ p {
 .navbar-container {
   display: flex;
   flex-basis: 30%;
-  border: 10px solid red;
   padding: 4rem;
   flex-grow: 1;
 }
@@ -65,14 +64,13 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  border: 10px solid green;
 }
 
 .navbar-container ul li {
   margin: 1rem;
   margin-top: 8rem;
   font-size: 2rem;
-  border: 10px solid yellow;
+  flex-grow: 1;
 }
 
 .main-container {
@@ -146,6 +144,9 @@ p {
 }
 .card-title {
   margin-bottom: 1rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8))
+    rgba(100, 100, 99, 0.589);
+  border-radius: 5px;
 }
 
 .card:first-child {
@@ -154,7 +155,7 @@ p {
 }
 
 .card:not(:first-child) {
-  background-image: url(../images/portfolio-wip.jpg);
+  background-image: url(../images/coming-soon.jpg);
 }
 
 /* Tablet and below viewport */
@@ -170,7 +171,8 @@ p {
     position: fixed;
     width: 100vw;
     flex-basis: 10%;
-    border: 1rem solid blue;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1))
+      rgba(100, 100, 99, 0.589);
   }
   .navbar-items-container {
     display: flex;
@@ -178,6 +180,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
   }
   .main-container {
     margin-top: 10rem;
