@@ -16,12 +16,14 @@ html {
 for different viewports. make h1 animated for desktop */
 /* This section targets using type selector cos these elements maybe be repeated 
 at top to make it easier to see whats happening */
-h1 {
+.title {
   font-size: 10rem;
+  font-family: fantasy;
 }
 
 h2 {
   font-size: 6rem;
+  text-align: center;
 }
 
 h3 {
@@ -30,8 +32,12 @@ h3 {
 
 p {
   font-size: 2rem;
+  font-family: monospace;
 }
 
+.cursive {
+  font-family: cursive;
+}
 .hero {
   background-image: linear-gradient(
       to bottom,
@@ -157,6 +163,44 @@ p {
 
 .card:not(:first-child) {
   background-image: url(../images/coming-soon.jpg);
+}
+
+/* This media query is to animate the title just for the desktop viewport */
+@media screen and (min-width: 768px) {
+  .main-container {
+    position: relative;
+  }
+
+  .title {
+    position: absolute;
+  }
+
+  .title--animated {
+    animation: titleBounceDown 3s ease-in-out;
+  }
+
+  .about-container {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+  }
+
+  @keyframes titleBounceDown {
+    0% {
+      transform: translateY(-20rem);
+    }
+
+    50% {
+      transform: translateY(5rem);
+    }
+  }
+}
+
+/* to do figure out how to shrink title  */
+/* This media query is a hacky fix for the title size I couldn't shrink  */
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: 8rem;
+  }
 }
 
 /* Tablet and below viewport */
