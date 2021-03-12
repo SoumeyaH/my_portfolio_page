@@ -3,6 +3,8 @@ portfolio - fix title background, add hover, overlay on background image
 css variables - maybe font family/style/colour.
 */
 
+/* to do look at css classes for redundancies eg h2s in html too    */
+
 :root {
   --font-color: white;
 }
@@ -191,6 +193,10 @@ p {
 
     50% {
       transform: translateY(5rem);
+    }
+
+    100% {
+      transform: translateY(0);
     }
   }
 }
