@@ -1,10 +1,20 @@
+/* to do consolidate and comment throughout 
+portfolio - fix title background, add hover, overlay on background image
+css variables - maybe font family/style/colour.
+*/
+
+:root {
+  --font-color: white;
+}
+
 html {
   font-size: 10px;
+  color: var(--font-color);
 }
 
 /* to do style make font sizes responsive maybe different sizes
 for different viewports. make h1 animated for desktop */
-/* This ection targets using type selector cos these elements maybe be repeated 
+/* This section targets using type selector cos these elements maybe be repeated 
 at top to make it easier to see whats happening */
 h1 {
   font-size: 10rem;
@@ -42,7 +52,7 @@ p {
 
 .navbar-container {
   display: flex;
-  flex-basis: 25%;
+  flex-basis: 30%;
   border: 10px solid red;
   padding: 4rem;
   flex-grow: 1;
@@ -158,17 +168,26 @@ p {
   }
   .navbar-container {
     position: fixed;
-    top: 0;
     width: 100vw;
+    flex-basis: 10%;
+    border: 1rem solid blue;
   }
   .navbar-items-container {
+    display: flex;
     flex-direction: row;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   .main-container {
     margin-top: 10rem;
   }
   .card {
     width: 80%;
+  }
+  .navbar-container ul li {
+    margin-top: 0;
+    /* to do figure this out */
+    justify-content: space-evenly;
   }
 }
