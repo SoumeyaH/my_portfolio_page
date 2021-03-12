@@ -167,7 +167,7 @@ p {
 }
 
 /* This media query is to animate the title just for the desktop viewport */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .main-container {
     position: relative;
   }
@@ -198,7 +198,7 @@ p {
       transform: translateY(0);
     }
   }
-}
+} */
 
 /* to do figure out how to shrink title  */
 /* This media query is a hacky fix for the title size I couldn't shrink  */
