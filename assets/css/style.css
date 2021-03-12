@@ -74,6 +74,7 @@ p {
 }
 
 .navbar-container ul li {
+  padding: 1rem 1rem;
   margin: 1rem;
   margin-top: 8rem;
   font-size: 2rem;
@@ -167,7 +168,12 @@ p {
 }
 
 /* This media query is to animate the title just for the desktop viewport */
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  li:hover {
+    background-color: rgba(10, 10, 10, 0.7);
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+  }
+
   .main-container {
     position: relative;
   }
@@ -198,7 +204,7 @@ p {
       transform: translateY(0);
     }
   }
-} */
+}
 
 /* to do figure out how to shrink title  */
 /* This media query is a hacky fix for the title size I couldn't shrink  */
