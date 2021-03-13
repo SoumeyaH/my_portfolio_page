@@ -1,10 +1,4 @@
-/* to do consolidate and comment throughout 
-portfolio - fix title background, add hover, overlay on background image
-css variables - maybe font family/style/colour.
-*/
-
-/* to do look at css classes for redundancies eg h2s in html too    */
-
+/* This section styles all sections of the document */
 :root {
   --font-color: white;
 }
@@ -14,14 +8,8 @@ html {
   color: var(--font-color);
 }
 
-/* to do style make font sizes responsive maybe different sizes
-for different viewports. make h1 animated for desktop */
-/* This section targets using type selector cos these elements maybe be repeated 
-at top to make it easier to see whats happening */
-.title {
-  font-size: 10rem;
-  font-family: fantasy;
-}
+/* This section is a collection of styles found throughout the document 
+they have been placed together at the top to make it easier to spot and style in the future */
 
 h2 {
   font-size: 6rem;
@@ -40,6 +28,9 @@ p {
 .cursive {
   font-family: cursive;
 }
+
+/* This set the background image  */
+
 .hero {
   background-image: linear-gradient(
       to bottom,
@@ -52,11 +43,13 @@ p {
   background-repeat: no-repeat;
 }
 
+/* This section styles all the content in the body  */
 .body-container {
   display: flex;
   height: 100%;
 }
 
+/* This section styles the navigation bar section  */
 .navbar-container {
   display: flex;
   flex-basis: 30%;
@@ -64,7 +57,6 @@ p {
   flex-grow: 1;
 }
 
-/* to do figure out how to make fixed and fit inside box */
 .navbar-items-container {
   display: flex;
   flex-direction: column;
@@ -81,12 +73,20 @@ p {
   flex-grow: 1;
 }
 
+/* This section styles the main section  */
 .main-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
+/* This section styles the h1 element  */
+.title {
+  font-size: 10rem;
+  font-family: fantasy;
+}
+
+/* This section styles the About Me section  */
 .about-container {
   padding: 1rem;
   margin-bottom: 1rem;
@@ -96,6 +96,7 @@ p {
   border-radius: 60%;
 }
 
+/* This section styles the Contact Me section  */
 .contact-container {
   padding: 1rem;
   margin-bottom: 1rem;
@@ -129,6 +130,7 @@ p {
   width: 8rem;
 }
 
+/* This section styles the My Portfolio section  */
 .portfolio-container {
   padding: 1rem;
   margin-bottom: 1rem;
@@ -206,17 +208,14 @@ p {
   }
 }
 
-/* to do figure out how to shrink title  */
-/* This media query is a hacky fix for the title size I couldn't shrink  */
 @media screen and (max-width: 850px) {
   .title {
     font-size: 8rem;
   }
 }
 
-/* Tablet and below viewport */
+/* This media query is to set the changes for tablet and below viewports */
 @media screen and (max-width: 768px) {
-  /* to do font size  */
   h1 {
     font-size: 4rem;
   }
@@ -246,7 +245,6 @@ p {
   }
   .navbar-container ul li {
     margin-top: 0;
-    /* to do figure this out */
     justify-content: space-evenly;
   }
 }
